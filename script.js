@@ -16,12 +16,11 @@ let firstNumber,secondNumber,operator,secondNumberStorage;
 const onKeyPress = (event) => {
   let key = event.target.innerText;
   displayScreen.innerHTML += `${key}`
-  // firstNumber = event.target.innerText;
-  // displayScreen.innerHTML += firstNumber;
- if(displayScreen.innerHTML === 'ON') { displayScreen.innerHTML === numberedKeys
-  
- }
  
+ 
+  
+ 
+
   
 
 }
@@ -34,15 +33,18 @@ for (let index = 0; index < numberedKeys.length; index++) {
 const onOperandKeyPress = (event) => {
   firstNumber = displayScreen.innerHTML
   
- 
+ console.log(firstNumber)
+
   operator = event.target.value;
   
 
-  firstNumberStorage.innerHTML += parseFloat(firstNumber);
+  firstNumberStorage.innerHTML += firstNumber;
 
   displayScreen.innerHTML = ''
 
-  
+  secondNumber = displayScreen.innerHTML
+
+  console.log()
 
   
 }
@@ -52,12 +54,6 @@ const onOperandKeyPress = (event) => {
   //calculate result of firstnumber, operator, secondnumber 
 
   //store the result in a variable, then render to screen 
-
-
-
-allButtons.disabled = true;
-
-
 
 
 for (let index = 0; index < operandKeys.length; index++) {
