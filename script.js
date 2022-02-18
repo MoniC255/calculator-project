@@ -88,7 +88,7 @@ displayScreen.innerHTML = 'ON';
 
 } else {
   displayScreen.innerHTML = 'OFF';
-  
+
 }
 
 
