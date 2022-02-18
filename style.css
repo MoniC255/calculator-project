@@ -57,10 +57,6 @@
 }
 
 
-#delete-key {
- background-color: orange;
-}
-
 
 button {
   cursor: pointer; 
@@ -77,7 +73,21 @@ button {
 }
 
 
-.clear-buttons {
+.clear-buttons--inactive {
   background-color: orangered;
 }
 
+#all-clearKey.active {
+font-size: 2rem;
+color: yellow;
+
+}
+
+#all-clearKey {
+  color: aqua;
+}
+
+#delete-key {
+  background-color: orange;
+ }
+ 
