@@ -73,11 +73,12 @@ button {
 }
 
 
-.clear-buttons--inactive {
+.clear-buttons {
   background-color: orangered;
 }
 
 #all-clearKey.active {
+background-color: orangered;
 font-size: 2rem;
 color: yellow;
 

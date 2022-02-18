@@ -10,14 +10,19 @@ const buttons = document.querySelectorAll("button");
 const displayScreen = document.getElementById("outputNumber");
 const firstNumberStorage = document.querySelector('#firstNumberStorage');
 
-let firstNumber,secondNumber,operator;
-
+let firstNumber,secondNumber,operator,secondNumberStorage;
 
 
 const onKeyPress = (event) => {
   let key = event.target.innerText;
   displayScreen.innerHTML += `${key}`
-
+  // firstNumber = event.target.innerText;
+  // displayScreen.innerHTML += firstNumber;
+ if(displayScreen.innerHTML === 'ON') { displayScreen.innerHTML === numberedKeys
+  
+ }
+ 
+  
 
 }
 
@@ -37,14 +42,22 @@ const onOperandKeyPress = (event) => {
 
   displayScreen.innerHTML = ''
 
+  
 
-
-
-
-
-
-
+  
 }
+
+  // if secondnumber is pressed followed by operator 
+
+  //calculate result of firstnumber, operator, secondnumber 
+
+  //store the result in a variable, then render to screen 
+
+
+
+allButtons.disabled = true;
+
+
 
 
 for (let index = 0; index < operandKeys.length; index++) {
@@ -67,12 +80,16 @@ clearKey.addEventListener('click', (clearButton))
 
 const message = () => {
 
-allClearKey.classList.toggle('active',)
+allClearKey.classList.toggle('active')
 
 
-allClearKey.classList.contains('active'),
+if (allClearKey.className === 'clear-buttons active') {
 displayScreen.innerHTML = 'ON';
 
+} else {
+  displayScreen.innerHTML = 'OFF';
+  
+}
 
 
 
@@ -98,15 +115,11 @@ deleteKey.addEventListener('click', (deleteButton))
 
 const decimalNumber = () => {
 
-  displayScreen.innerHTML += decimalKey.innerHTML
-
- 
-
-
+  displayScreen.innerHTML += decimalKey.innerHTML;
 }
 
 
-decimalKey.addEventListener('click', (decimalNumber))
+decimalKey.addEventListener('click', decimalNumber)
 
 
 
